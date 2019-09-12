@@ -182,12 +182,22 @@ nav {
   border-bottom: 2px dashed #C0C0C0;
   font-weight: bolder;
 }
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+  }
+}
 nav p {
   font-size: 3rem;
   width: 40rem;
   padding: 0;
   margin: 0 0 0 5rem;
   align-self: center;
+}
+@media (max-width: 500px) {
+  nav p {
+    width: auto;
+  }
 }
 nav a {
   font-size: 1.6rem;
@@ -196,6 +206,11 @@ nav a {
   text-decoration: none;
   width: 4rem;
   margin: 0 3rem;
+}
+@media (max-width: 500px) {
+  nav a {
+    margin: 0 3rem;
+  }
 }
 .home .content-section {
   margin: 30px 0;

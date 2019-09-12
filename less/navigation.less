@@ -8,12 +8,20 @@ nav {
     border-bottom: @border;
     font-weight: bolder;
 
+    @media @mobile {
+        flex-direction: column;
+    }
+
     p {
         font-size: 3rem;
         width: 40rem;
         padding: 0;
         margin: 0 0 0 5rem;
         align-self: center;
+
+        @media @mobile {
+            width: auto;
+        }
     }
 
     a {
@@ -23,5 +31,9 @@ nav {
         text-decoration: none;
         width: 4rem;
         margin: 0 3rem;
+
+        @media @mobile {
+            margin: 0 3rem;
+        }
     }
 }
