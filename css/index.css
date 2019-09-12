@@ -133,14 +133,16 @@ html {
   font-size: 62.5%;
 }
 html,
-body {
+body,
+nav a {
   font-family: 'Roboto', sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+nav p {
   font-family: 'Indie Flower', cursive;
 }
 h1 {
@@ -171,9 +173,10 @@ img {
 nav {
   display: flex;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 3rem;
   padding: 2rem 0;
   border-bottom: 2px dashed #C0C0C0;
+  font-weight: bolder;
 }
 nav p {
   font-size: 3rem;
