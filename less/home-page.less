@@ -5,7 +5,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border: @border;
+
+    header {
+      border-bottom: @border;
+      padding-bottom: 1rem;
+      margin-bottom: 2.5rem;
+
+      .funHeader {
+        padding: 2.5rem 0 0.8rem 0;
+      }
+    }
     
     .text-content {
       width: 48%;
@@ -61,9 +70,8 @@
       margin-bottom: 30px;     
 
       .btn {
-        background-color: black;
+        .customBtn(@eastern-blue, 100%, @white);
       }
     }
-
   }
 }// home
