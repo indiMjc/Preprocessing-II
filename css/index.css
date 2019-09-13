@@ -239,7 +239,6 @@ nav a {
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
-  border: 1px solid green;
 }
 @media (max-width: 500px) {
   .home .content-section .text-content {
@@ -250,7 +249,6 @@ nav a {
 }
 .home .content-section .text-content .lets-go {
   width: 50%;
-  border: 1px solid red;
 }
 @media (max-width: 500px) {
   .home .content-section .text-content .lets-go {
