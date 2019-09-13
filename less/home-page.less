@@ -24,25 +24,35 @@
       }
     }
 
-    .text-content {
-      width: 48%;
-      padding-right: 1%;
-      
+    .adventureBox {
+      display: flex;
+      width: 100%;
+
       @media @mobile {
-        width: auto;
-        padding-top: 2rem;
+        flex-direction: column;
       }
 
-      .lets-go {
+      .text-content {
         width: 50%;
-
+        padding-right: 1%;
+        
         @media @mobile {
           width: auto;
-          padding: 3rem 0 0 0;
-          border-top: @border;
+          padding-top: 2rem;
         }
-      }      
+
+        .lets-go {
+          width: 50%;
+
+          @media @mobile {
+            width: auto;
+            padding: 3rem 0 0 0;
+            border-top: @border;
+          }
+        }      
+      }
     }
+    
 
 
     .img-content {
@@ -67,6 +77,7 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    border-bottom: @border;
 
     @media @mobile {
       flex-direction: column-reverse;
@@ -75,6 +86,11 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      width: 45%;
+
+      @media @mobile {
+        width: auto;
+      }
     }
 
     .img-content {

@@ -236,21 +236,30 @@ nav a {
 .home .content-section header .funHeader {
   padding: 2.5rem 0 0.8rem 0;
 }
-.home .content-section .text-content {
-  width: 48%;
+.home .content-section .adventureBox {
+  display: flex;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .home .content-section .adventureBox {
+    flex-direction: column;
+  }
+}
+.home .content-section .adventureBox .text-content {
+  width: 50%;
   padding-right: 1%;
 }
 @media (max-width: 500px) {
-  .home .content-section .text-content {
+  .home .content-section .adventureBox .text-content {
     width: auto;
     padding-top: 2rem;
   }
 }
-.home .content-section .text-content .lets-go {
+.home .content-section .adventureBox .text-content .lets-go {
   width: 50%;
 }
 @media (max-width: 500px) {
-  .home .content-section .text-content .lets-go {
+  .home .content-section .adventureBox .text-content .lets-go {
     width: auto;
     padding: 3rem 0 0 0;
     border-top: 2px dashed #C0C0C0;
@@ -281,6 +290,12 @@ nav a {
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
+  width: 45%;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    width: auto;
+  }
 }
 .home .inverse-content .img-content {
   padding-right: 1%;
