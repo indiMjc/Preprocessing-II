@@ -4,26 +4,48 @@
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;    
+    justify-content: space-between;
+    
+    @media @mobile {
+      flex-direction: column;
+      width: auto;
+    }
 
     header {
-      border-bottom: @border;
       padding-bottom: 1rem;
       margin-bottom: 2.5rem;
+
+      @media @mobile {
+        margin-bottom: 0;
+      }
 
       .funHeader {
         padding: 2.5rem 0 0.8rem 0;
       }
     }
 
-      .text-content {
-        width: 48%;
-        padding-right: 1%;      
-
-        .lets-go {
-          width: 50%;
-        }      
+    .text-content {
+      width: 48%;
+      padding-right: 1%;
+      border: 1px solid green; 
+      
+      @media @mobile {
+        width: auto;
+        padding-top: 2rem;
+        border-top: @border;
       }
+
+      .lets-go {
+        width: 50%;
+        border: 1px solid red;
+
+        @media @mobile {
+          width: auto;
+          padding: 0;
+        }
+      }      
+    }
+
 
     .img-content {
       width: 48%;
@@ -33,11 +55,22 @@
         border-radius: 10px;
       }
     }
+
+    .img-content {
+      @media @mobile {
+        width: 100%;
+        margin: 0 3.5rem;
+      }
+    }
   }
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -47,12 +80,23 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      img {
+        @media @mobile {
+          width: auto;
+        }
+      }
+
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @mobile {
+      width: 100%;
+    }
 
     img {
       border-radius: 10px;
@@ -65,9 +109,18 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+    }
+
     .destination {
       width: 30%;
-      margin-bottom: 30px;     
+      margin-bottom: 30px;
+      
+      @media @mobile {
+        width: 75%;
+        margin: auto;
+      }
 
       .btn {
         .customBtn(@eastern-blue, 100%, @white);
