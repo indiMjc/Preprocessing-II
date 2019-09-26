@@ -1,1 +1,14 @@
 // Follow the order in the readme
+
+// variables and mixins go first because they are lazy loaded, i.e. they will not display in the compiled code and if somebody new comes to work on this project they might not see them
+@import "variables";
+@import "mixins";
+
+// resets and element level styling goes next to ensure that they don't override the styles we apply to other elements
+@import "reset";
+@import "global";
+
+// elements and containers to be styled via nesting
+@import "navigation";
+@import "home-page";
+@import "footer";

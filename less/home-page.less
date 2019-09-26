@@ -1,24 +1,75 @@
-.home {
+.home { 
 
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
     
-    .text-content {
-      width: 48%;
-      padding-right: 1%;
+    @media @mobile {
+      flex-direction: column;
+      width: auto;
     }
+
+    header {
+      padding-bottom: 1rem;
+      margin-bottom: 2.5rem;
+
+      @media @mobile {
+        margin-bottom: 0;
+      }
+
+      .funHeader {
+        padding: 2.5rem 0 0.8rem 0;
+      }
+    }
+
+    .adventureBox {
+      display: flex;
+      width: 100%;
+
+      @media @mobile {
+        flex-direction: column;
+      }
+
+      .text-content {
+        width: 50%;
+        padding-right: 1%;
+        
+        @media @mobile {
+          width: auto;
+          padding-top: 2rem;
+        }
+
+        .lets-go {
+          width: 50%;
+
+          @media @mobile {
+            width: auto;
+            padding: 3rem 0 0 0;
+            border-top: @border;
+          }
+        }      
+      }
+    }
+    
+
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      
+
       img {
         border-radius: 10px;
+      }
+    }
+
+    .img-content {
+      @media @mobile {
+        width: 100%;
+        margin: 0 3.5rem;
       }
     }
   }
@@ -26,21 +77,43 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    border-bottom: @border;
+
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      width: 45%;
+
+      @media @mobile {
+        width: auto;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      img {
+        @media @mobile {
+          width: auto;
+        }
+      }
+
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @mobile {
+      width: 100%;
+      margin: 0 auto;
+    }
 
     img {
       border-radius: 10px;
@@ -53,9 +126,23 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+      margin-top: 2rem;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      
+      @media @mobile {
+        width: 75%;
+        margin: 2rem auto;
+      }
+
+      .btn {
+        .customBtn(@eastern-blue, 100%, @white);
+      }
     }
   }
 }// home

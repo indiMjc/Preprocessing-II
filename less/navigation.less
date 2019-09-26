@@ -1,1 +1,39 @@
-// Navigation Styles here
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 3rem;
+    padding: 2rem 0;
+    border-bottom: @border;
+    font-weight: bolder;
+
+    @media @mobile {
+        flex-direction: column;
+    }
+
+    p {
+        font-size: 3rem;
+        width: 40rem;
+        padding: 0;
+        margin: 0 0 0 5rem;
+        align-self: center;
+
+        @media @mobile {
+            width: auto;
+        }
+    }
+
+    a {
+        font-size: 1.6rem;
+        color: black;
+        align-self: center;
+        text-decoration: none;
+        width: 4rem;
+        margin: 0 3rem;
+
+        @media @mobile {
+            margin: 0 3rem;
+        }
+    }
+}
